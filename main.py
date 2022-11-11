@@ -1,17 +1,25 @@
 import math
 
 import random
-mylist = []
-for i in range(0,10):
-    x = random.randint(0,100)
-    mylist.append(x)
-print(mylist)
+myList = []
+for i in range(1,10):
+    x = random.randint(1,100)
+    myList.append(x)
+print(myList)
 prime_numbers = []
-for i in mylist:
-    c = 0
-    for j in range(1,i):
+indexes = []
+for index, i in enumerate(myList):
+    a = 0
+    for j in range(2,i):
         if i%j==0:
-            c+=1
-    if c == 1:
+            a+=1
+    if a == 0:
         prime_numbers.append(i)
+        indexes.append(index)
+    a = 0
 print(prime_numbers)
+print(indexes)
+
+
+
+
