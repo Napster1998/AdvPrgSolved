@@ -35,10 +35,3 @@ class Car:
 
     def setseats(self,seats):
         self.seats = seats
-
-myCar = Car('Red','WagonR',4 , 5)
-print(myCar.getName())
-myCar.setName('McLarenP1')
-print(myCar.getName())
-myCar.setseats(90)
-print(myCar.seats)
